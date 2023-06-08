@@ -2,6 +2,9 @@
 
 - This file contains the notes of basic web development which can be helpful for understanding how thing works behind the scenes and also provides foundational information about web development which can also be asked in the interview.
 
+## Projects
+- Todolist: ([To-do-list](https://to-do-list-iota-self.vercel.app/))
+
 ## URL- Uniform Resource Locator
 
 - How thing work when we enter URL into the browser
