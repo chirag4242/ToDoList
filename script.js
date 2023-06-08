@@ -5,6 +5,7 @@ const button = document.getElementById('btnAdd');
 const output = document.getElementById('output');
 
 button.addEventListener('click', handleAddButton);
+displayList();
 
 function handleAddButton() {
     const value = txtInput.value.trim();
@@ -73,7 +74,7 @@ function displayList() {
 
         taskText.addEventListener('dblclick', () => {
             taskText.contentEditable = true;
-            li.focus(); s
+            li.focus();
         });
 
         taskText.addEventListener('keydown', (event) => {
