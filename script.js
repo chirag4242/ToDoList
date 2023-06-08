@@ -1,4 +1,4 @@
-const toDoList = [];
+const toDoList = ["Write a small program", "Contribute to open source"];
 
 const txtInput = document.getElementById('inputText');
 const button = document.getElementById('btnAdd');
