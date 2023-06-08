@@ -5,7 +5,9 @@ const button = document.getElementById('btnAdd');
 const output = document.getElementById('output');
 
 button.addEventListener('click', handleAddButton);
-displayList();
+document.addEventListener("DOMContentLoaded", () => {
+    displayList();
+});
 
 function handleAddButton() {
     const value = txtInput.value.trim();
