@@ -171,3 +171,29 @@ button:active {
 .btnAdd:active {
     background-color: #3e8e41;
 }
+
+span.note {
+    display: inline-block;
+    background-color: #f8f8f8;
+    color: #555555;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+  
+span.note:hover {
+    background-color: #e8e8e8;
+}
+  
+span.note::before {
+    content: "Note: ";
+    font-weight: bold;
+}
+  
+span.note + span {
+    margin-left: 10px;
+}

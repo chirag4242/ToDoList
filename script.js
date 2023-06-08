@@ -25,7 +25,9 @@ function handleTaskTextDoubleClick(event) {
 }
 
 function handleTaskTextKeyDown(event, index) {
-    if (event.keyCode === "Enter") {
+    console.log(`In the event`);
+    if (event.key === "Enter") {
+        console.log(`In the condition`);
         event.preventDefault();
         const taskText = event.target;
         taskText.contentEditable = false;
@@ -40,16 +42,18 @@ function handleDeleteButtonClick(index) {
 
 function createListItem(task, index) {
     const li = document.createElement("li");
-    const taskText = document.createTextNode('span');
+    const taskText = document.createElement('span');
     const btn = document.createElement('button');
     taskText.textContent = task;
-    btn.textContent = 'Delete';
+    btn.innerHTML = `<i class="material-icons">delete</i>`;
 
     li.appendChild(taskText);
     li.appendChild(btn);
 
     taskText.addEventListener('dblclick', handleTaskTextDoubleClick);
-    taskText.addEventListener('keydown', handleTaskTextKeyDown(toDoList[i], i));
+    taskText.addEventListener('keydown', function (event) {
+        handleTaskTextKeyDown(event, index);
+    });
     btn.addEventListener('click', () => handleDeleteButtonClick(index));
 
     return li;
