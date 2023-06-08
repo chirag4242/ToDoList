@@ -1,0 +1,28 @@
+<!--DOCTYPE indicate that it's on HTML Document-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/">
+    <head>
+        <title>
+        My first web Page
+        </title>   
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1 class="heading">Todo list</h1>
+        <div class="layout">
+            <div class="search-layout">
+                <label class="txtLabel">Add to list: </label>
+                <input id="inputText" type="text" placeholder="Please Enter the item"/>
+                <button id="btnAdd" type="button" type="button" class="btnAdd">Add</button>
+            </div>
+            <div class="container">
+                <ul id ="output">
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
